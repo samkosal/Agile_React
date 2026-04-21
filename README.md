@@ -22,7 +22,7 @@ If you are developing a production application, we recommend using TypeScript wi
 # NOTES
 
 ## step 1:
-As a User who is interested in the artist in this record label website, I want a short bio for each artist (links to their social), description of the artist,Name, Merch of the artist, songs/album the yput out  so that users looking at the artist can access artist info easily.
+As a User who is interested in the artist in this record label website, I want a short bio for each artist the yput out  so that users looking at the artist can access artist info easily.
 
 As a User who using the phone to view the website. I want to be able see every important thing that a user on a computer would see on this website. so that mobile user can easily access all the information easily on a smaller screen.
 
@@ -30,7 +30,7 @@ As a User who using the phone to view the website. I want to be able see every i
 
 ## step 2:
 
-Given I am on the label's homepage, when the page loads, then all artists are displayed with their name, genre, and bio visible (Links to their social, songs, merch, etc.).
+Given I am on the label's homepage, when the page loads, then all artists are displayed with their (links to their social), description of the artist,Name, Merch of the artist, songs/album.
 
 Given I view the page on a phone screen (~375px wide). when the page loads,Then each artist info card will collapse when it detects a smaller screen. The user could scroll down to view more artist. (no horizontal scrolling).
 
