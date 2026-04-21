@@ -28,23 +28,6 @@ As a User who using the phone to view the website. I want to be able see every i
 
 
 
-A user story tells you what to build. Acceptance criteria tell you when it's done.
-
-Acceptance criteria make "done" specific and testable. "It works" and "it looks good on mobile" are subjective judgements that two people on a team will interpret differently. A well-written criterion is something you can check with a concrete yes or no.
-
-The format uses three parts, Given / When / Then.
-
-Given sets the starting state (where the user is, what conditions exist)
-When describes the action the user takes
-Then describes the observable result
-Here's an example for the artist browsing story from above:
-
-Given I am on the label's homepage, when the page loads, then all artists are displayed with their name, genre, and bio visible.
-
-Given I view the page on a screen 375px wide, when the page loads, then the artist cards stack vertically and all text remains readable without horizontal scrolling.
-
-Each criterion is a test you can actually run. Either the text is readable at 375px or it isn't. Either every artist shows their genre or it doesn't.
-
 ## step 2:
 
 Given I am on the label's homepage, when the page loads, then all artists are displayed with their name, genre, and bio visible (Links to their social, songs, merch, etc.).
@@ -53,4 +36,48 @@ Given I view the page on a phone screen (~375px wide). when the page loads,Then 
 
 Given I am viewing a specific artist card, when a user clicks a certian link of their socials. Then it will take the user to an external website that they wanted to go.
 
+## step 3:
 
+# User Story Feedback
+## Story 1: Artist Bio
+Format: Correct.
+
+User Specificity: Vague. "User who is interested in the artist" is broad. Consider if this is a "Fan," a "Music Journalist," or a "Booking Agent," as their needs for info might differ.
+
+Goal: Mixed. While it describes user needs, it is becoming a "laundry list" of features (merch, songs, bio, name) rather than a single cohesive goal.
+
+Reason: Vague filler. "Access artist info easily" essentially repeats the goal. Why do they need this info? Is it to decide to buy a ticket? To follow them on social media?
+
+## Story 2: Mobile View
+Format: Correct.
+
+User Specificity: Vague. "User who using the phone" describes the device, but not the persona or their intent.
+
+Goal: Implementation-focused. "See every important thing" is a requirement for parity, but a user story should focus on the value of being able to browse on the go or in a specific context.
+
+Reason: Vague filler. "Access all the information easily" is a generic statement that doesn't explain the underlying benefit of mobile access.
+
+# Acceptance Criteria Feedback
+## Criterion 1: Artist Display
+Format: Correct.
+
+Specificity: Issues with measurable specifics. The list of items in the "Then" statement is broad ("etc."). A test cannot verify "etc." You need to define exactly which links must be present to pass the test.
+
+Observable Outcome: Correct.
+
+## Criterion 2: Mobile Responsiveness
+Format: Correct.
+
+Specificity: Vague language. "Artist info card will collapse" is a bit ambiguous. Does it collapse into an accordion? Does it stack vertically? You should specify the expected layout behavior. Also, "detects a smaller screen" describes the logic, whereas the test should focus on the visual result at that width.
+
+Observable Outcome: Correct.
+
+## Criterion 3: Social Links
+Format: Correct.
+
+Specificity: Vague language. "A certain link" and "website that they wanted to go" are not testable. A tester wouldn't know which link to click or which URL to verify. You need to specify a representative example (e.g., "the Instagram icon") and the expected destination behavior.
+
+Observable Outcome: Correct.
+
+General Advice for Improvement
+When you revise these, try to put yourself in the shoes of a Quality Assurance (QA) tester. If a tester reads your Acceptance Criteria and has to ask you, "Which link should I click?" or "What counts as 'working'?", the criteria are not specific enough yet. Use hard numbers, specific button names, and clear "Why" statements.
