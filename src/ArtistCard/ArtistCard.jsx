@@ -8,9 +8,9 @@ return (
         <p> {genre} </p>
         <p> {bio}</p>
 
-        (albums.map((album) => (
+        {albums.map((album) => (
             <AlbumItem key ={album.id} album = {album} />
-        )))
+        ))}
     
     </div>
 
