@@ -1,26 +1,12 @@
 //  receives: a single artist object as a prop
-//   renders: name, genre, bio, then one AlbumItem per album
 
-function ArtistCard({ artist }) {
+export default function ArtistCard(props) {
   return (
     <div>
-      <h1>{artist.name}</h1>
-      <p>{artist.genre}</p>
-      <p>{artist.bio}</p>
-
-      {artist.albums.map((album) => (
-        <AlbumItem key={album.id} album={album} />
-      ))}
+      <h1>{props.artist.name}</h1>
+      <p>{props.artist.genre}</p>
+      <p>{props.artist.bio}</p>
     </div>
   );
 }
 
-function AlbumItem({ album }) {
-  return (
-    <div>
-      <h3>{album.title}</h3>
-    </div>
-  );
-}
-
-export default ArtistCard;

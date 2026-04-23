@@ -81,3 +81,20 @@ Observable Outcome: Correct.
 
 General Advice for Improvement
 When you revise these, try to put yourself in the shoes of a Quality Assurance (QA) tester. If a tester reads your Acceptance Criteria and has to ask you, "Which link should I click?" or "What counts as 'working'?", the criteria are not specific enough yet. Use hard numbers, specific button names, and clear "Why" statements.
+
+
+App
+  reads data.json directly
+  renders: label header, then ArtistList
+
+ArtistList
+  receives: the artists array as a prop
+  renders: one ArtistCard per artist
+
+ArtistCard
+  receives: a single artist object as a prop
+  renders: name, genre, bio, then one AlbumItem per album
+
+AlbumItem
+  receives: a single album object as a prop
+  renders: the album title and year

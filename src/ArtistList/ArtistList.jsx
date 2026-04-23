@@ -1,18 +1,15 @@
-import ArtistCard from 'src/ArtistCard/ArtistCard.jsx'
+import ArtistCard from '../ArtistCard/ArtistCard.jsx'
 
 export default function ArtistList(prop) {
-    const artistEntry = prop.artists.map((entry) =>{
+    const artist = prop.data.artists;
+    const artistEntry = artist.map((entry) =>{
         return (
             <>
-                <ArtistCard 
-                    id={entry.id}
-                    name={entry.name}
-                    genre={entry.genre}
-                    bio={entry.bio}
-                    albums={entry.albums}
-                />
+                <ArtistCard key={entry.id} artist={entry} />
             </>
         )
     })
+
+    return artistEntry;
 
 }
