@@ -1,0 +1,73 @@
+/* Clean, modern header for Wavelength Records */
+.header-container {
+	background: linear-gradient(90deg, #232526 0%, #414345 100%);
+	color: #fff;
+	padding: 2.5rem 1.5rem 2rem 1.5rem;
+	border-radius: 2rem 2rem 2rem 2rem;
+	box-shadow: 0 4px 24px rgba(30,41,59,0.10);
+	margin-bottom: 2.5rem;
+	transition: box-shadow 0.2s;
+}
+
+.header-container:hover {
+	box-shadow: 0 8px 32px rgba(30,41,59,0.16);
+}
+
+.header-logo-title {
+	display: flex;
+	align-items: center;
+	gap: 2rem;
+	flex-wrap: wrap;
+}
+
+.header-logo {
+	width: 72px;
+	height: 72px;
+	object-fit: cover;
+	border-radius: 50%;
+	border: 3px solid #fff;
+	background: #fff;
+	box-shadow: 0 2px 12px rgba(0,0,0,0.10);
+	transition: transform 0.2s;
+}
+.header-logo:hover {
+	transform: scale(1.05) rotate(-2deg);
+}
+
+.header-title {
+	font-size: 2.5rem;
+	font-weight: 800;
+	margin: 0;
+	letter-spacing: 0.03em;
+	line-height: 1.1;
+	color: #fff;
+	text-shadow: 0 2px 8px rgba(0,0,0,0.10);
+}
+
+.header-subtitle {
+	font-size: 1.15rem;
+	font-weight: 500;
+	margin: 0.4rem 0 0 0;
+	color: #a5b4fc;
+	letter-spacing: 0.04em;
+}
+
+@media (max-width: 600px) {
+	.header-container {
+		padding: 1.2rem 0.5rem 1rem 0.5rem;
+		border-radius: 0 0 1.2rem 1.2rem;
+	}
+	.header-logo-title {
+		flex-direction: column;
+		align-items: flex-start;
+		gap: 1rem;
+	}
+	.header-title {
+		font-size: 1.6rem;
+	}
+	.header-logo {
+		width: 52px;
+		height: 52px;
+	}
+}
+
