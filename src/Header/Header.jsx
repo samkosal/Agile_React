@@ -1,5 +1,6 @@
 import './Header.css';
 
+// make sure to grab data from json and fill description from here
 export default function Header() {
     return (
         <header className="header-container">
