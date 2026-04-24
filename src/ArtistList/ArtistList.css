@@ -1,0 +1,35 @@
+.artist-list {
+  padding: 1.5rem;
+  /* background: #1a1c1e; */
+  min-height: 100vh;
+}
+
+.artist-list-title {
+  color: #a5b4fc;
+  font-size: 1.8rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  margin: 0 0 1.5rem 0;
+}
+
+.artist-list-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+@media (max-width: 900px) {
+  .artist-list-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .artist-list-grid {
+    grid-template-columns: 1fr;
+  }
+  .artist-list {
+    padding: 1rem 0.5rem;
+  }
+}

@@ -1,0 +1,65 @@
+.artist-card {
+  background: linear-gradient(160deg, #232526 0%, #2d3142 100%);
+  border: 1px solid #414345;
+  border-radius: 1.2rem;
+  padding: 1.5rem;
+  color: #fff;
+  box-shadow: 0 2px 16px rgba(30, 41, 59, 0.18);
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.artist-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 32px rgba(30, 41, 59, 0.30);
+}
+
+.artist-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.artist-card-name {
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin: 0;
+  color: #fff;
+}
+
+.artist-card-genre {
+  background: #a5b4fc22;
+  color: #a5b4fc;
+  border: 1px solid #a5b4fc55;
+  border-radius: 2rem;
+  padding: 0.2rem 0.8rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+}
+
+.artist-card-bio {
+  font-size: 0.97rem;
+  color: #cbd5e1;
+  margin: 0;
+  line-height: 1.6;
+}
+
+.artist-card-albums-title {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #a5b4fc;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin: 0 0 0.5rem 0;
+}
+
+.artist-card-albums {
+  margin-top: auto;
+  border-top: 1px solid #414345;
+  padding-top: 0.75rem;
+}

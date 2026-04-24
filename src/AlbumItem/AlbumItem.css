@@ -1,0 +1,29 @@
+.album-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.album-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #1a1c1e;
+  border-radius: 0.5rem;
+  padding: 0.35rem 0.75rem;
+  font-size: 0.9rem;
+}
+
+.album-title {
+  color: #e2e8f0;
+  font-weight: 500;
+}
+
+.album-year {
+  color: #a5b4fc;
+  font-weight: 600;
+  font-size: 0.85rem;
+}
